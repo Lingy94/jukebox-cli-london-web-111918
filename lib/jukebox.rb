@@ -31,9 +31,16 @@ def play(songs)
   song_data = gets.chomp
     songs.each do |song|
       songs.each_index do |x| 
+<<<<<<< HEAD
         if song_data == song
           puts "Playing #{song}"
         elsif song_data.to_i == (x+1)
+=======
+        binding.pry
+        if song_data == song
+          puts "Playing #{song}"
+        elsif song_data == x
+>>>>>>> 01a80452b2f3e48669c9a621a1f8f06607de137a
           puts "Playing #{songs[x]}"
         else
           puts "Invalid input, please try again"
@@ -41,6 +48,7 @@ def play(songs)
       end
     end
 end
+<<<<<<< HEAD
   
 def exit_jukebox
   puts "Goodbye"
@@ -61,3 +69,6 @@ def run(songs)
     command = gets.chomp
   end
 end
+=======
+  
+>>>>>>> 01a80452b2f3e48669c9a621a1f8f06607de137a
